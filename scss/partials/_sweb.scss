@@ -1,0 +1,79 @@
+//single page styling for websites
+
+#single-website-body {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  margin-bottom: 0;
+  padding: 1rem;
+  background: black;
+  border: 2px solid #eee;
+  .post-image {
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  .view {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+}
+.post-info {
+  max-width: 1200px;
+  margin: 1.75rem auto 2rem;
+  padding: 2rem;
+  .url {
+    text-decoration: none;
+    display: block;
+    width: 40%;
+    margin: 1.75rem auto 0;
+    padding: .95rem 1rem;
+    text-align: center;
+    background: $contrast;
+    color: white;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    transition: all .55s ease;
+    &:hover {
+      background: $contrast2;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}
+.previous,
+.next {
+  background: black;
+  padding: 1rem 3rem;
+//  max-width: 1000px;
+//  margin: 0 auto;
+  text-align: center;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.previous {
+  background: $prim-blue;
+  text-align: left;
+}
+.next {
+  background: $contrast2;
+  text-align: right;
+}
+
+//archive page styling for websites
+
+#websites-body {
+  padding: 4% 0;
+}
+.website-sidebar {
+  img {
+    width: 100%;
+  }
+}

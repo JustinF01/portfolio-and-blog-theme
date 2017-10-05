@@ -1,0 +1,29 @@
+footer {
+  padding: 3rem 0 1rem;
+  background: $prim-blue;
+  color: white;
+  ul {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .copy {
+    text-align: center;
+    padding: .5rem;
+  }
+  a {
+    color: white;
+    transition: all .55s ease;
+    &:hover {
+      color: $contrast2;
+    }
+  }
+}

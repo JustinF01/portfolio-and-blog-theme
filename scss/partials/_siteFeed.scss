@@ -1,0 +1,25 @@
+.site-feed {
+  width: 100%;
+  padding: 7rem 0;
+  text-align: center;
+  .siteFeed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .site-post {
+    max-width: 300px;
+    margin: 1rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0;
+    a {
+      text-decoration: none;
+      color: $grey;
+    }
+  }
+}

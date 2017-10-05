@@ -1,0 +1,179 @@
+//navigation styling in the header.php template
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 4rem 2rem 1.5rem;
+  background: $grey;
+  color: white;
+  margin-top: -300%;
+  transition: all .55s ease-in-out;
+  z-index: 5;
+}
+.navLinksList {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+    li {
+      font-family: $heading-font-stack;
+      flex-basis: 150px;
+      flex-grow: 1;
+      margin: .25rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      transition: all .55s ease;
+      font-size: 1.25rem;
+      padding: .8rem;
+      border-radius: 6px;
+        &:hover {
+          background: #777;
+          color: black;
+        }
+    }
+    a {
+      display: block;
+      width: 100%;
+      color: white;
+      text-decoration: none;
+        &:hover {
+//          color: black;
+      }
+    }
+}
+.nav-widgets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  .widget-area {
+    width: 50%;
+    flex-basis: 500px;
+    margin: 0;
+    padding: 2%;
+    .full-logo {
+      padding: 5rem;
+      img {
+        width: 100%;
+      }
+      @media (max-width: 454px) {
+        padding: 2rem;
+      }
+    }
+    .nf-form-fields-required {
+      display: none;
+    }
+    .nf-field-container {
+      margin: 0;
+    }
+    .ninja-forms-field  {
+      height: 3rem;
+      padding: 1rem;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      border: none;
+      background: #484646;
+      color: #eee;
+      margin: .25rem 0;
+    }
+    #nf-field-19 {
+      background: $contrast2;
+      width: 100%;
+      font-size: 1.15rem;
+      font-weight: 600;
+      -webkit-appearance: none;
+      transition: .55s ease;
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+      }
+    }
+  }
+}
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 5% auto 2%;
+  list-style: none;
+  padding: 0;
+  li {
+    flex-grow: 1;
+    text-align: center;
+    margin: .25rem;
+    padding: .25rem;
+    border: 1px solid $contrast2;
+    transition: all .55s ease;
+      &:hover {
+        background: white;
+    }
+  }
+  a {
+    display: block;
+    width: 100%;
+    color: $contrast2;
+    transition: all .55s ease;
+    &:hover {
+      color: black;
+    }
+  }
+}
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: .005rem .5rem;
+  display: flex; //navBar is a flex container
+  justify-content: space-between;
+  background: $prim-blue;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+  z-index: 50;
+  transition: all .55s cubic-bezier(.42, -0.41, .53, 1.38);
+  .logo {
+    flex-basis: 70px;
+    padding: .5rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .logo-heading {
+     flex-grow: 1;
+      margin-right: auto;
+      margin-left: 5px;
+      @media (max-width: 556px) {
+      display: none;
+      }
+  }
+  .navBtn {
+      flex-basis: 80px;
+      max-width: 80px;
+      width: 100%;
+      padding: .7rem;
+      transition: all .55s cubic-bezier(.42, -0.41, .53, 1.38);
+      &:hover {
+        cursor: pointer;
+      }
+      .bar {
+        width: 60%;
+        height: 2px;
+        margin: .59rem 0;
+        background: white;
+        border-radius: 2px;
+      }
+    }
+  
+}
+.admin-bar .navBar {
+  top: 32px;
+}

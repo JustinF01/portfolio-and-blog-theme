@@ -1,0 +1,67 @@
+.hero {
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(45deg,  $contrast2, $contrast-alpha), url('../imgs/header.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat, no-repeat;
+  color: white;
+  @media (min-width: 1200px) {
+    padding: 10%;
+  }
+  @media (max-width: 860px) {
+     background: linear-gradient(45deg,  $contrast2, $contrast);
+  }
+  .intro {
+    max-width: 1000px;
+    margin: 0 auto;
+     h1 {
+      @include main-heading;
+      color: white;
+      margin: 1rem auto .5rem;
+     }
+    .wel {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 2rem;
+      color: white;
+     }
+  }
+  
+}
+
+
+
+
+
+.buttonWrapper {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2% auto;
+  button {
+    @include button-base;
+    min-width: 350px;
+    padding: 2%;
+    flex-grow: 1;
+    margin: 2%;
+    &:nth-child(0n + 1) {
+      background: $contrast;
+    }
+    &:nth-child(2n) {
+      background: $contrast2;
+    }
+    @media (max-width: 645px) {
+      padding: 4%;
+      margin-top: 5%;
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+  }
+}

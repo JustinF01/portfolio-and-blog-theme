@@ -1,0 +1,20 @@
+
+#postBody {
+  max-width: 1000px;
+  padding: 0;
+  box-shadow: none;
+  .post-img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .post-content {
+    padding: 5%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

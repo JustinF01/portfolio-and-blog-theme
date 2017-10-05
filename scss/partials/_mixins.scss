@@ -1,0 +1,45 @@
+
+@mixin main-heading {
+  font-family: $heading-font-stack;
+  font-size: 4.5rem;
+  line-height: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
+  @media (max-width: 664px) {
+    font-size: 2.5rem;
+  }
+}
+
+@mixin button-base {
+  padding: 2%;
+  border: none;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  text-align: center;
+  transition: all .55s ease;
+  @content;
+  &:hover {
+    opacity: .8;
+    cursor: pointer;
+  }
+}
+
+@mixin center-layout {
+  max-width: 1200px;
+  margin: -9% auto 5%;
+  padding: 4% 0;
+  background: white;
+  box-shadow: 2px 2px 2px #999;
+}
+@mixin header {
+  padding: 10% 5%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(45deg, $contrast, $contrast2);
+  background-attachment: fixed;
+  @media (max-width: 664px) {
+    padding: 30% 5% 20%;
+  }
+}

@@ -1,0 +1,24 @@
+.behance {
+  padding: 7rem 0 10rem;
+  text-align: center;
+  button {
+    @include button-base {
+     background: $contrast; 
+    }
+    width: 90%;
+    margin: 0 auto;
+    padding: 4%;
+    @media (min-width: 600px) {
+      width: 60%;
+      padding: 1.5rem;
+    }
+    @media (min-width: 1200px) {
+      width: 20%;
+      padding: .9rem;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

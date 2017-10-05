@@ -1,0 +1,29 @@
+//General styles
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.7rem;
+  font-family: $body-font-stack;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-stack;
+}
+h1 {
+  @include main-heading;
+}
+.header {
+  @include header;
+  p {
+    font-size: 125%;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+}
+.body {
+  @include center-layout;
+}

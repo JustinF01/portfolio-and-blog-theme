@@ -1,0 +1,49 @@
+#contactBody {
+  padding: 4% 0;
+}
+.contactBody {
+  flex-basis: 900px;
+  padding: 3.5%;
+  h2 {
+    margin: .25rem;
+    font-size: 3rem;
+  }
+  p {
+    margin-bottom: 1.25rem;
+  }
+  .nf-form-fields-required {
+    font-style: italic;
+    font-size: 75%;
+  }
+  input[type="text"],
+  input[type="email"] {
+    height: 40px;
+    width: 45%;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-radius: 6px;
+    box-shadow: none;
+    border: none;
+    background: #eee;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+     @media (max-width: 725px) {
+      width: 100%;
+    }
+  }
+  .field-wrap input[type="button"] {
+    width: 45%;
+    padding: .75rem;
+    background: $contrast;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    border-radius: 6px;
+    float: right;
+    @media (max-width: 725px) {
+      width: 100%;
+    }
+  }
+}
